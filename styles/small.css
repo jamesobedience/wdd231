@@ -39,12 +39,12 @@ border-bottom:1px solid #444;
 nav a{
 display:block;
 padding:10px;
-color:white;
+color:black;
 text-decoration:none;
 }
 
 nav a:hover{
-background:#100c0d;
+background:#e3dcd2;
 }
 
 .show{
