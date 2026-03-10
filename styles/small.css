@@ -1,0 +1,113 @@
+body{
+font-family:'Roboto',sans-serif;
+margin:0;
+line-height: 1.5;
+}
+
+header{
+background:#e3dcd2;
+padding:10px;
+}
+
+.logo{
+font-size:1.5rem;
+font-weight:bold;
+}
+
+#menuBtn{
+font-size:1.8rem;
+background:none;
+border:none;
+}
+
+nav{
+display:none;
+background: #013328;
+}
+
+nav ul{
+list-style:none;
+margin:0;
+padding:0;
+}
+
+nav li{
+border-bottom:1px solid #444;
+}
+
+nav a{
+display:block;
+padding:10px;
+color:white;
+text-decoration:none;
+}
+
+nav a:hover{
+background:#100c0d;
+}
+
+.show{
+display:block;
+}
+
+main{
+padding:15px;
+}
+
+.about-grid{
+display:block;
+}
+
+.about, .photo{
+background:#eee;
+padding:10px;
+margin-bottom:10px;
+}
+
+.photo img{
+width:100%;
+max-width:200px;
+display:block;
+margin:auto;
+}
+
+.buttons{
+display:flex;
+gap:10px;
+margin-bottom:10px;
+}
+
+.buttons button{
+flex:1;
+padding:8px;
+}
+
+#courseContainer{
+display:grid;
+gap:10px;
+}
+
+.course-card{
+background:#cc8b65;
+padding:10px;
+text-align:center;
+border-radius:5px;
+}
+
+.completed{
+background:#013328;
+color:white;
+font-weight:bold;
+}
+
+footer{
+background:#e3dcd2;
+text-align:center;
+padding:10px;
+margin-top:20px;
+}
+
+.social a{
+margin:0 10px;
+text-decoration:none;
+}

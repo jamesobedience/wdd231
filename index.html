@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>WDD231 Home Page</title>
+
+<meta name="description" content="WDD231 Course Home Page">
+<meta name="author" content="James Imoh Obedience">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+
+<script src="scripts/navigation.js" defer></script>
+<script src="scripts/date.js" defer></script>
+<script src="scripts/courses.js" defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<span>James Imoh Obedience</span>
+</div>
+
+<button id="menuBtn">☰</button>
+
+<nav id="navMenu">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Chamber</a></li>
+<li><a href="#">Final</a></li>
+</ul>
+</nav>
+
+</header>
+
+
+<main>
+
+<h1>Home</h1>
+
+<div class="about-grid">
+
+<section class="about">
+<h2>About Me</h2>
+
+<p>
+Hello! My name is James Imoh Obedience. I am a student of BYU Idaho majoring in web development and programming.
+This page is my WDD231 course home page. I am excited to learn more about web development and create amazing projects throughout this course. I have a passion for technology and look forward to expanding my skills in this field.
+</p>
+
+</section>
+
+
+<section class="photo">
+
+<h2>Student Photo</h2>
+
+<img src="images/myself.jpg" alt="Student Photo">
+
+</section>
+
+</div>
+
+
+<section class="courses">
+
+<h2>Web Certificate Courses</h2>
+
+<div class="buttons">
+
+<button id="allBtn">All</button>
+<button id="cseBtn">CSE</button>
+<button id="wddBtn">WDD</button>
+
+</div>
+
+<div id="courseContainer"></div>
+
+<p id="creditTotal"></p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="social">
+
+<a href="https://github.com/jamesobedience" target="_blank">GitHub</a>
+<a href="https://linkedin.com/in/obedience-james-8b3730275" target="_blank">LinkedIn</a>
+<a href="https://twitter.com" target="_blank">X</a>
+
+</div>
+
+<p>
+© <span id="year"></span> • James Imoh Obedience • Nigeria 
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+
+</html>
