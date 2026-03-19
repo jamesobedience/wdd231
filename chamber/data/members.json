@@ -1,0 +1,64 @@
+[
+{
+"name": "Edo Tech Solutions",
+"address": "12 Airport Road, Benin City",
+"phone": "+234 801 111 1111",
+"website": "https://edotech.com",
+"image": "edotech.jpg",
+"membership": 3
+},
+
+{
+"name": "Royal Bakery",
+"address": "45 Ring Road, Benin City",
+"phone": "+234 801 222 2222",
+"website": "https://royalbakery.com",
+"image": "royalbakery.jpg",
+"membership": 2
+},
+
+{
+"name": "Benin Furniture Hub",
+"address": "10 Sapele Road",
+"phone": "+234 801 333 3333",
+"website": "https://furniturehub.com",
+"image": "furniture.jpg",
+"membership": 1
+},
+
+{
+"name": "Green Farms",
+"address": "Ugbowo Area",
+"phone": "+234 801 444 4444",
+"website": "https://greenfarms.com",
+"image": "greenfarms.jpg",
+"membership": 2
+},
+
+{
+"name": "City Transport Ltd",
+"address": "Mission Road",
+"phone": "+234 801 555 5555",
+"website": "https://citytransport.com",
+"image": "transport.jpg",
+"membership": 1
+},
+
+{
+"name": "Smart Electronics",
+"address": "Ring Road",
+"phone": "+234 801 666 6666",
+"website": "https://smartelectronics.com",
+"image": "electronics.jpg",
+"membership": 3
+},
+
+{
+"name": "Golden Hotel",
+"address": "GRA Benin",
+"phone": "+234 801 777 7777",
+"website": "https://goldenhotel.com",
+"image": "hotel.jpg",
+"membership": 3
+}
+]

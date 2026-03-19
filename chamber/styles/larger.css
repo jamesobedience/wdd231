@@ -1,0 +1,28 @@
+@media (min-width: 768px) {
+
+  /* HEADER LAYOUT */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  /* NAVIGATION */
+  nav ul {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  /* GRID VIEW */
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* LIST VIEW (TABLE STYLE) */
+  #members.list section {
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    align-items: center;
+  }
+
+}
