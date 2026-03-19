@@ -42,6 +42,10 @@ nav a:hover {
   background: #E63946;
 }
 
+.active {
+  background: #E63946;
+}
+
 /* MAIN */
 main {
   padding: 1rem;
