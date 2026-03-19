@@ -82,7 +82,7 @@ main {
   text-align: center;
   position: relative;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid #ffd700;
 }
 
 /* IMAGE */
@@ -127,7 +127,7 @@ main {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr 1fr auto;
   padding: 10px;
-  border-bottom: 1px solid gold;
+  border-bottom: 1px solid #ffd700;
   position: relative;
 }
 
@@ -148,12 +148,12 @@ main {
 }
 
 .gold {
-  background: gold;
+  background: #ffd700;
   color: black;
 }
 
 .silver {
-  background: silver;
+  background: #c0c0c0;
   color: black;
 }
 
