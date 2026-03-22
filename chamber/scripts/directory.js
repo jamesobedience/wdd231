@@ -1,6 +1,5 @@
 const container = document.querySelector("#members");
 
-// ✅ FIXED PATH
 const url = "data/members.json";
 
 async function getMembers() {
