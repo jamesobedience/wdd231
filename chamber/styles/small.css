@@ -1,4 +1,4 @@
-/* Reset basics */
+/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -39,11 +39,29 @@ nav a {
 }
 
 nav a:hover {
-  background: #E63946;
+  background: #c1121f;
 }
 
 .active {
-  background: #E63946;
+  background: #c1121f;
+  color: white;
+}
+
+#menuBtn {
+  background: #1D3557;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: none;
+}
+
+nav.open ul {
+  display: flex;
 }
 
 /* MAIN */
@@ -52,12 +70,12 @@ main {
 }
 
 /* BUTTONS */
-.view-buttons {
+.menu {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.view-buttons button {
+.menu button {
   padding: 10px;
   margin: 5px;
   border: none;
@@ -67,7 +85,7 @@ main {
   border-radius: 5px;
 }
 
-.view-buttons button:hover {
+.menu button:hover {
   background: #E63946;
 }
 
@@ -78,7 +96,7 @@ main {
   gap: 1rem;
 }
 
-/* CARD STYLE */
+/* CARD */
 #members.grid section {
   background: white;
   border-radius: 10px;
@@ -86,7 +104,7 @@ main {
   text-align: center;
   position: relative;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-bottom: 1px solid #ffd700;
+  border-bottom: 3px solid #b8860b;
 }
 
 /* IMAGE */
@@ -111,12 +129,12 @@ main {
 #members.grid a {
   display: inline-block;
   margin-top: 0.5rem;
-  color: #E63946;
+  color: #c1121f;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* HOVER EFFECT */
+/* HOVER */
 #members.grid section:hover {
   transform: scale(1.03);
   transition: 0.3s;
@@ -129,42 +147,55 @@ main {
 
 #members.list section {
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr auto;
+  grid-template-columns: 1fr;
   padding: 10px;
-  border-bottom: 1px solid #ffd700;
-  position: relative;
+  border-bottom: 1px solid #b8860b;
 }
 
+/* ALTERNATE ROW */
 #members.list section:nth-child(even) {
   background: #f5f5f5;
 }
 
+/* 🚨 REQUIRED: HIDE IMAGES IN LIST */
+#members.list img {
+  display: none;
+}
+
 /* BADGES */
 .badge {
-  position: absolute;
-  top: 10px;
-  right: 10px;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.7rem;
   font-weight: bold;
   color: white;
+  margin-bottom: 5px;
 }
 
+/* FIX badge position in grid */
+#members.grid .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* FIX badge in list */
+#members.list .badge {
+  position: static;
+}
+
+/* BADGE COLORS */
 .gold {
-  background: #ffd700;
-  color: black;
+  background: #b8860b;
 }
 
 .silver {
-  background: #c0c0c0;
-  color: black;
+  background: #6c757d;
 }
 
 .member {
   background: #1D3557;
 }
-
 
 /* FOOTER */
 footer {
@@ -175,18 +206,7 @@ footer {
   margin-top: 2rem;
 }
 
-.footer-info,
-.footer-social,
-.footer-dev-info {
-    flex: 1 1 300px;
-}
-
 .footer-social img {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-.footer-info a {
-    color: #adb5bd;
+  width: 30px;
+  margin: 5px;
 }

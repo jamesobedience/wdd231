@@ -1,29 +1,34 @@
-// Select container
 const container = document.querySelector("#members");
 
-// Fetch JSON data
+// ✅ FIXED PATH
 const url = "data/members.json";
 
 async function getMembers() {
   try {
     const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error("Fetch failed");
+    }
+
     const data = await response.json();
     displayMembers(data);
+
   } catch (error) {
-    console.error("Error fetching members:", error);
+    console.error(error);
   }
 }
 
 getMembers();
 
-// Display members
 function displayMembers(members) {
   container.innerHTML = "";
 
   members.forEach(member => {
+
     const card = document.createElement("section");
 
-    // Membership Badge
+    // BADGE
     const badge = document.createElement("div");
     badge.classList.add("badge");
 
@@ -38,31 +43,28 @@ function displayMembers(members) {
       badge.classList.add("member");
     }
 
-    // Image
+    // IMAGE
     const img = document.createElement("img");
     img.src = "images/" + member.image;
     img.alt = member.name;
     img.loading = "lazy";
 
-    // Name
+    // TEXT
     const name = document.createElement("h3");
     name.textContent = member.name;
 
-    // Address
     const address = document.createElement("p");
     address.textContent = member.address;
 
-    // Phone
     const phone = document.createElement("p");
     phone.textContent = member.phone;
 
-    // Website
     const link = document.createElement("a");
     link.href = member.website;
     link.textContent = "Visit Website";
     link.target = "_blank";
 
-    // Append elements
+    // APPEND
     card.appendChild(badge);
     card.appendChild(img);
     card.appendChild(name);
@@ -74,16 +76,21 @@ function displayMembers(members) {
   });
 }
 
-// Grid/List Toggle
-const gridBtn = document.querySelector("#grid");
-const listBtn = document.querySelector("#list");
-
-gridBtn.addEventListener("click", () => {
+// GRID / LIST
+document.querySelector("#grid").onclick = () => {
   container.classList.add("grid");
   container.classList.remove("list");
-});
+};
 
-listBtn.addEventListener("click", () => {
+document.querySelector("#list").onclick = () => {
   container.classList.add("list");
   container.classList.remove("grid");
+};
+
+// MOBILE MENU
+const menuBtn = document.querySelector("#menuBtn");
+const nav = document.querySelector("#navMenu");
+
+menuBtn.addEventListener("click", () => {
+  nav.classList.toggle("open");
 });
