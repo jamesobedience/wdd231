@@ -27,7 +27,7 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -56,9 +56,6 @@ nav a:hover {
   cursor: pointer;
 }
 
-nav ul {
-  display: none;
-}
 
 nav.open ul {
   display: flex;
