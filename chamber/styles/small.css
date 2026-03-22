@@ -1,4 +1,3 @@
-/* RESET */
 * {
   box-sizing: border-box;
 }
@@ -149,12 +148,10 @@ main {
   border-bottom: 1px solid #b8860b;
 }
 
-/* ALTERNATE ROW */
 #members.list section:nth-child(even) {
   background: #f5f5f5;
 }
 
-/* 🚨 REQUIRED: HIDE IMAGES IN LIST */
 #members.list img {
   display: none;
 }
@@ -169,14 +166,14 @@ main {
   margin-bottom: 5px;
 }
 
-/* FIX badge position in grid */
+
 #members.grid .badge {
   position: absolute;
   top: 10px;
   right: 10px;
 }
 
-/* FIX badge in list */
+
 #members.list .badge {
   position: static;
 }
