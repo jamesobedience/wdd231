@@ -1,21 +1,35 @@
-/* DESKTOP */
 @media (min-width: 768px) {
 
-  nav ul {
-    display: flex !important;
-    flex-direction: row;
-    justify-content: center;
-  }
+/* NAV */
+nav ul {
+display: flex !important;
+flex-direction: row;
+justify-content: center;
+gap: 20px;
+background: none;
+}
 
-  #menuBtn {
-    display: none;
-  }
+#menuBtn {
+display: none;
+}
 
-  #members.grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
+/* GRID: Events | Weather | Forecast */
+.news-grid {
+grid-template-columns: 2fr 1fr 1fr;
+}
 
-  #members.list section {
-    grid-template-columns: 2fr 2fr 1fr 1fr auto;
-  }
+
+.news-grid > .box-container:nth-child(4) {
+grid-column: 1 / -1;
+}
+
+
+#company-spotlight-container {
+grid-template-columns: repeat(3, 1fr);
+}
+
+/* DIRECTORY GRID */
+#members.grid {
+grid-template-columns: repeat(3, 1fr);
+}
 }

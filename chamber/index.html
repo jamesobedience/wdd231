@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Benin City Chamber of Commerce</title>
+
+<meta name="description" content="Home for the Benin City Chamber of Commerce.">
+<meta name="author" content="James Imoh Obedience">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon" sizes="16x16">
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="Benin City Chamber Directory">
+<meta property="og:description" content="Explore local businesses in the Benin City Chamber of Commerce directory.">
+<meta property="og:image" content="https://jamesobedience.github.io/wdd231/chamber/images/logo.jpg">
+<meta property="og:url" content="https://jamesobedience.github.io/wdd231/chamber/directory.html">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.jpg" alt="Chamber Logo">
+  <h1>Benin City Chamber of Commerce</h1>
+
+  <!-- ⭐ HAMBURGER BUTTON -->
+  <button id="menuBtn" class="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="#">Join</a></li>
+      <li><a href="#">Discover</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-img-container">
+    <img src="images/Hero.webp" alt="Benin City">
+    <div class="overlay"></div>
+  </div>
+
+  <div class="content">
+    <h2>Welcome to Benin City Chamber of Commerce</h2>
+    <a href="#" class="btn btn-join">Join Us</a>
+    <a href="#explore" class="btn btn-explore">Explore</a>
+  </div>
+</section>
+
+<!-- EXPLORE -->
+<section id="explore" class="news-grid">
+
+  <!-- EVENTS -->
+  <div class="box-container">
+    <h3>Events</h3>
+    <p><strong>April 10, 2026:</strong> Business Networking Meetup — Connect with local entrepreneurs and grow your network.</p>
+    <p><strong>April 15, 2026:</strong> Digital Marketing Workshop — Learn how to promote your business online effectively.</p>
+    <p><strong>April 22, 2026:</strong> Entrepreneurship Seminar — Discover strategies for starting and scaling your business.</p>
+    <p><strong>April 28, 2026:</strong> Trade Fair & Exhibition — Showcase your products and services to the community.</p>
+  </div>
+
+  <!-- WEATHER -->
+  <div class="box-container">
+    <h3>Current Weather</h3>
+    <img id="weather-icon" src="images/placeholder.png" alt="">
+    <p id="current-temp"></p>
+    <p id="current-weather"></p>
+    <p>High: <span id="high-temp"></span></p>
+    <p>Low: <span id="low-temp"></span></p>
+    <p>Humidity: <span id="humidity"></span></p>
+    <p>Sunrise: <span id="sunrise"></span></p>
+    <p>Sunset: <span id="sunset"></span></p>
+  </div>
+
+  <!-- FORECAST -->
+  <div class="box-container">
+    <h3>Forecast</h3>
+    <p id="today"></p>
+    <p id="tomorrow"></p>
+    <p id="after-tomorrow"></p>
+  </div>
+
+  <!-- SPOTLIGHT -->
+  <div class="box-container">
+    <h3>Company Spotlight</h3>
+    <div id="company-spotlight-container"></div>
+  </div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>Benin City Chamber of Commerce</p>
+
+<p>
+10 Mission Road <br>
+Benin City, Nigeria <br>
+info@beninchamber.org <br>
++234 905 761 3210
+</p>
+
+<p>
+© <span id="year"></span> | James Imoh Obedience | WDD 231
+</p>
+
+<div class="footer-social">
+    <a href="https://www.youtube.com"><img src="images/youtube.webp" alt="YouTube"></a>
+    <a href="https://twitter.com"><img src="images/twitter.webp" alt="Twitter"></a>
+    <a href="https://www.linkedin.com"><img src="images/linkedin.webp" alt="LinkedIn"></a>
+</div>
+
+<p>
+Last Modification: <span id="lastModified"></span>
+</p>
+
+</footer>
+
+<script src="scripts/dates.js" defer></script>
+<script src="scripts/weather.js" defer></script>
+<script src="scripts/hamburger.js"defer></script>
+</body>
+</html>
