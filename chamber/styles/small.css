@@ -67,13 +67,7 @@ nav.open ul {
 display: flex;
 }
 
-.overlay {
-  background: rgba(0,0,0,0.7);
-}
 
-.hero-img-container {
-  height: 300px; 
-}
 
 /* ===============================
 HAMBURGER MENU
