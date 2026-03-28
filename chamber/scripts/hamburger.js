@@ -3,7 +3,7 @@ const navMenu = document.getElementById("navMenu");
 
 menuBtn.addEventListener("click", () => {
   navMenu.classList.toggle("open");
-  menuBtn.classList.toggle("active"); // ⭐ animation
+  menuBtn.classList.toggle("active");
 });
 
 /* OPTIONAL: Close menu when clicking a link */
