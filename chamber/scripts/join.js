@@ -1,18 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // Timestamp
+  // =========================
+  // TIMESTAMP
+  // =========================
   const timestampField = document.getElementById("timestamp");
   if (timestampField) {
     timestampField.value = new Date().toISOString();
   }
 
+  // =========================
+  // FORM VALIDATION
+  // =========================
   const form = document.querySelector("form");
 
   form.addEventListener("submit", function (e) {
 
     let valid = true;
 
-    // Clear old errors
+    // Clear errors
     document.querySelectorAll(".error").forEach(el => el.textContent = "");
     document.querySelectorAll("input").forEach(el => el.classList.remove("invalid"));
 
@@ -51,28 +56,42 @@ document.addEventListener("DOMContentLoaded", () => {
       valid = false;
     }
 
-    // STOP submit if invalid
     if (!valid) {
       e.preventDefault();
     }
   });
 
+  // =========================
+  // MODALS (NO onclick)
+  // =========================
+
+  // Open modal
+  const modalButtons = document.querySelectorAll("[data-modal]");
+  modalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      const modal = document.getElementById(button.dataset.modal);
+      if (modal) modal.showModal();
+    });
+  });
+
+  // Close modal
+  const closeButtons = document.querySelectorAll(".close-btn");
+  closeButtons.forEach(button => {
+    button.addEventListener("click", () => {
+      button.closest("dialog").close();
+    });
+  });
+
 });
 
-// Show error function
+
+// =========================
+// ERROR FUNCTION
+// =========================
 function showError(input, message) {
   input.classList.add("invalid");
   const error = document.getElementById(input.id + "Error");
   if (error) {
     error.textContent = message;
   }
-}
-
-// Modal functions
-function openModal(id) {
-  document.getElementById(id).showModal();
-}
-
-function closeModal(id) {
-  document.getElementById(id).close();
 }

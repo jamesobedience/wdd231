@@ -141,22 +141,22 @@
 
     <div class="card">
       <h3>NP Membership</h3>
-      <button type="button" onclick="openModal('npModal')">Learn More</button>
+      <button type="button" data-modal="npModal">Learn More</button>
     </div>
 
     <div class="card">
       <h3>Bronze Membership</h3>
-      <button type="button" onclick="openModal('bronzeModal')">Learn More</button>
+      <button type="button" data-modal="bronzeModal">Learn More</button>
     </div>
 
     <div class="card">
       <h3>Silver Membership</h3>
-      <button type="button" onclick="openModal('silverModal')">Learn More</button>
+      <button type="button" data-modal="silverModal">Learn More</button>
     </div>
 
     <div class="card">
       <h3>Gold Membership</h3>
-      <button type="button" onclick="openModal('goldModal')">Learn More</button>
+      <button type="button" data-modal="goldModal">Learn More</button>
     </div>
 
   </section>
@@ -167,25 +167,25 @@
 <dialog id="npModal">
   <h3>NP Membership Benefits</h3>
   <p>No fee. Ideal for non-profits.</p>
-  <button onclick="closeModal('npModal')">Close</button>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
 
 <dialog id="bronzeModal">
   <h3>Bronze Membership Benefits</h3>
   <p>Basic networking and visibility.</p>
-  <button onclick="closeModal('bronzeModal')">Close</button>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
 
 <dialog id="silverModal">
   <h3>Silver Membership Benefits</h3>
   <p>Includes training and promotions.</p>
-  <button onclick="closeModal('silverModal')">Close</button>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
 
 <dialog id="goldModal">
   <h3>Gold Membership Benefits</h3>
   <p>Premium exposure and benefits.</p>
-  <button onclick="closeModal('goldModal')">Close</button>
+  <button type="button" class="close-btn">Close</button>
 </dialog>
 
 <footer>
