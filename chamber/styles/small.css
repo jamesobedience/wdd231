@@ -211,7 +211,7 @@ footer {
 JOIN PAGE
 =============================== */
 .join-container {
-  display: grid;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 80vh;
@@ -282,7 +282,7 @@ form input[type="submit"]:hover {
 
 .card {
   background: white;
-  padding: 1rem;
+  padding: 2rem;
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -319,7 +319,7 @@ THANK YOU PAGE
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 70vh;
+  min-height: 100vh;
 }
 
 .thankyou-card {
@@ -390,7 +390,7 @@ MODALS
 =============================== */
 dialog {
   border-radius: 10px;
-  padding: 1rem;
+  padding: 5rem;
 }
 
 dialog::backdrop {
