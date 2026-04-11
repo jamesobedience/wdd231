@@ -30,7 +30,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: #1D3557;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
 }
 
@@ -56,7 +56,7 @@ nav ul {
 nav a {
   display: block;
   padding: 10px;
-  color: white;
+  color: #ffffff;
 }
 
 nav a:hover,
@@ -94,7 +94,7 @@ HAMBURGER
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: #ffffff;
   transition: 0.3s ease;
 }
 
@@ -133,7 +133,7 @@ HERO
   position: absolute;
   bottom: 20px;
   right: 20px;
-  color: white;
+  color: #ffffff;
   text-align: right;
   background: rgba(0,0,0,0.5);
   padding: 10px;
@@ -157,7 +157,7 @@ HERO
 
 .btn-explore {
   background: #1e3a8a;
-  color: white;
+  color: #ffffff;
 }
 
 .btn:hover {
@@ -168,6 +168,12 @@ HERO
 /* ===============================
 GRID
 =============================== */
+.card-base {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
 .news-grid {
   display: grid;
   gap: 10px;
@@ -175,14 +181,12 @@ GRID
 }
 
 .box-container {
-  background: white;
   padding: 1rem;
-  border-radius: 5px;
 }
 
 .box-container h3 {
   background: #333;
-  color: white;
+  color: #ffffff;
   padding: 8px;
   margin: -1rem -1rem 10px;
 }
@@ -192,7 +196,7 @@ FOOTER
 =============================== */
 footer {
   background: #1D3557;
-  color: white;
+  color: #ffffff;
   padding: 1rem;
   margin-top: 2rem;
   text-align: center;
@@ -223,12 +227,9 @@ JOIN PAGE
 
 /* FORM */
 form {
-  background: white;
   padding: 1.5rem;
-  border-radius: 10px;
   max-width: 500px;
   width: 100%;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
   opacity: 0;
   transform: translateY(20px);
@@ -282,11 +283,8 @@ form input[type="submit"]:hover {
 }
 
 .card {
-  background: white;
   padding: 2rem;
-  border-radius: 10px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 
   opacity: 0;
   transform: translateY(20px);
@@ -310,7 +308,7 @@ form input[type="submit"]:hover {
 
 .card button:hover {
   background: #c1121f;
-  color: white;
+  color: #ffffff;
 }
 
 /* ===============================
@@ -324,13 +322,10 @@ THANK YOU PAGE
 }
 
 .thankyou-card {
-  background: white;
   padding: 2rem;
-  border-radius: 10px;
   max-width: 500px;
   width: 100%;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   border-top: 5px solid #c1121f;
 
   
@@ -348,7 +343,7 @@ THANK YOU PAGE
 .thankyou-card .btn {
   margin-top: 15px;
   background: #c1121f;
-  color: white;
+  color: #ffffff;
   padding: 10px 15px;
   border-radius: 5px;
 }
@@ -414,7 +409,7 @@ DISCOVER PAGE
 /* VISIT MESSAGE */
 .visit-message {
   background: #c1121f;
-  color: white;
+  color: #ffffff;
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 1.5rem;
@@ -489,7 +484,7 @@ DISCOVER PAGE
   margin-top: 12px;
   padding: 12px;
   background: #c1121f;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 30px;
   font-size: 0.9rem;
