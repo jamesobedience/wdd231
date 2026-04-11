@@ -395,3 +395,108 @@ dialog {
 dialog::backdrop {
   background: rgba(0,0,0,0.6);
 }
+
+
+
+/* ===============================
+DISCOVER PAGE
+=============================== */
+
+.discover-container {
+  padding: 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* VISIT MESSAGE */
+.visit-message {
+  background: #c1121f;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* GRID */
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+/* CARD */
+.discover-grid .card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  display: block;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* IMAGE */
+.discover-grid figure {
+  margin: 0;
+}
+
+.discover-grid img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  display: block;
+}
+
+/* TEXT */
+.discover-grid .text {
+  margin-top: 10px;
+}
+
+.discover-grid h2 {
+  font-size: 1.2rem;
+  color: #1D3557;
+  margin-bottom: 8px;
+}
+
+.discover-grid p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.discover-grid address {
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* BUTTON */
+.discover-grid button {
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  background: #c1121f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.discover-grid button:hover {
+  background: #9b0d18;
+}
+

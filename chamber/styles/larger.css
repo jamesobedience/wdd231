@@ -112,3 +112,93 @@ main h2 {
 }
 
 
+/* ===============================
+MEDIUM SCREEN (TABLET)
+=============================== */
+
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+    grid-template-columns: 1fr;
+  }
+  .discover-grid .card {
+  display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .discover-grid figure {
+    flex: 1;
+  }
+
+  .discover-grid img {
+    height: 200px;
+    width: 100%;
+  }
+
+  .discover-grid .text {
+    flex: 2;
+    margin-top: 0;
+  }
+
+  .discover-grid button {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+/* ===============================
+LARGE SCREEN (DESKTOP)
+=============================== */
+
+@media (min-width: 1025px) {
+
+  .discover-grid {
+    grid-template-areas:
+    "card1 card2"
+    "card3 card4"
+    "card5 card6"
+    "card7 card8";
+
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+
+  .discover-grid .card {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .discover-grid figure {
+    flex: 1;
+    max-width: 200px;
+  }
+
+  .discover-grid img {
+    height: 180px;
+    width: 100%;
+
+  }
+
+  .discover-grid .text {
+    flex: 2;
+  }
+
+  .discover-grid img:hover {
+    transform: scale(1.05);
+    transition: 1s ease;
+  }
+
+  .discover-grid button {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
