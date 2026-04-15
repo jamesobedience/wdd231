@@ -2,6 +2,7 @@ const container = document.querySelector("#tips-container");
 const buttons = document.querySelectorAll(".tips-menu button");
 const dialog = document.querySelector("#tipModal");
 const modalContent = document.querySelector("#modalContent");
+const closeBtn = document.querySelector("#closeModal");
 
 // DATA (no fetch needed here)
 const tips = [
@@ -21,6 +22,8 @@ const tips = [
 
 // DISPLAY
 function displayTips(data) {
+  if (!container) return;
+
   container.innerHTML = "";
 
   data.forEach(tip => {
@@ -33,13 +36,15 @@ function displayTips(data) {
       <button>Read More</button>
     `;
 
-    // OPEN MODAL
     card.querySelector("button").addEventListener("click", () => {
+      if (!dialog || !modalContent) return;
+
       modalContent.innerHTML = `
         <h2>${tip.title}</h2>
         <p>${tip.text}</p>
         <p><strong>Category:</strong> ${tip.category}</p>
       `;
+
       dialog.showModal();
     });
 
@@ -62,24 +67,26 @@ buttons.forEach(btn => {
 
     displayTips(filtered);
 
-    // save preference
     localStorage.setItem("tipFilter", filter);
   });
 });
 
 // CLOSE MODAL
-document.querySelector("#closeModal").addEventListener("click", () => {
-  dialog.close();
-});
+if (closeBtn && dialog) {
+  closeBtn.addEventListener("click", () => {
+    dialog.close();
+  });
+}
 
 // LOAD SAVED FILTER
 function loadFilter() {
   const saved = localStorage.getItem("tipFilter");
 
   if (saved) {
-    const filtered = saved === "all"
-      ? tips
-      : tips.filter(t => t.category === saved);
+    const filtered =
+      saved === "all"
+        ? tips
+        : tips.filter(t => t.category === saved);
 
     displayTips(filtered);
   } else {
@@ -87,5 +94,14 @@ function loadFilter() {
   }
 }
 
-// INIT
-document.addEventListener("DOMContentLoaded", loadFilter);
+// INIT (SAFE)
+function init() {
+  loadFilter();
+}
+
+// requestIdleCallback fallback (fix for errors)
+if ("requestIdleCallback" in window) {
+  requestIdleCallback(init);
+} else {
+  window.addEventListener("load", init);
+}

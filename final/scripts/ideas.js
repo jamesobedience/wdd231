@@ -25,14 +25,14 @@ async function getIdeas() {
 }
 
 function displayIdeas(ideas) {
-  container.innerHTML = "";
+  const fragment = document.createDocumentFragment();
 
   ideas.forEach(idea => {
     const card = document.createElement("div");
     card.classList.add("card");
 
     card.innerHTML = `
-      <img src="${idea.image}" alt="${idea.name}">
+      <img src="${idea.image}" alt="${idea.name}" loading="lazy">
       <h3>${idea.name}</h3>
       <p>${idea.description}</p>
       <p><strong>Cost:</strong> ${idea.cost}</p>
@@ -40,22 +40,35 @@ function displayIdeas(ideas) {
     `;
 
     card.querySelector("button").addEventListener("click", () => {
-      modalContent.innerHTML = `
-        <h2>${idea.name}</h2>
-        <img src="${idea.image}" style="width:100%">
-        <p>${idea.description}</p>
-        <p>${idea.cost}</p>
-        <p>${idea.difficulty}</p>
-      `;
-      dialog.showModal();
+      openModal(idea);
     });
 
-    container.appendChild(card);
+    fragment.appendChild(card);
   });
+
+  container.innerHTML = "";
+  container.appendChild(fragment);
 }
 
-closeBtn.addEventListener("click", () => dialog.close());
+// CLOSE MODAL
+if (closeBtn && dialog) {
+  closeBtn.addEventListener("click", () => dialog.close());
+}
 
+// OPEN MODAL
+function openModal(idea) {
+  modalContent.innerHTML = `
+    <h2>${idea.name}</h2>
+    <img src="${idea.image}" alt="${idea.name}" style="width:100%; border-radius:10px;">
+    <p>${idea.description}</p>
+    <p><strong>Startup Cost:</strong> ${idea.cost}</p>
+    <p><strong>Difficulty:</strong> ${idea.difficulty}</p>
+  `;
+
+  dialog.showModal();
+}
+
+// LOCAL STORAGE
 function saveToLocal(data) {
   localStorage.setItem("businessIdeas", JSON.stringify(data));
 }
@@ -65,4 +78,10 @@ function loadFromLocal() {
   if (stored) displayIdeas(JSON.parse(stored));
 }
 
-document.addEventListener("DOMContentLoaded", getIdeas);
+// INIT (FIXED — NO requestIdleCallback ERROR)
+function init() {
+  loadFromLocal();
+  getIdeas();
+}
+
+window.addEventListener("load", init);
