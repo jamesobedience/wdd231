@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Business Tips | Simple Business Ideas</title>
+
+<meta name="description" content="Learn simple tips to start and grow your business successfully.">
+<meta name="author" content="James Imoh Obedience">
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<script src="scripts/tips.js" defer></script>
+<script src="scripts/hamburger.js" defer></script>
+<script src="scripts/dates.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <img src="images/logo.webp" alt="Business Ideas Logo" width="50" height="50">
+  <h1>Business Tips</h1>
+
+  <button id="menuBtn" class="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ideas.html">Ideas</a></li>
+      <li><a href="tips.html" class="active">Tips</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <h2>Helpful Tips for Your Business</h2>
+
+  <!-- FILTER BUTTONS -->
+  <div class="tips-menu">
+    <button data-filter="all">All</button>
+    <button data-filter="start">Starting</button>
+    <button data-filter="money">Money</button>
+    <button data-filter="growth">Growth</button>
+  </div>
+
+  <!-- TIPS CONTAINER -->
+  <div id="tips-container"></div>
+
+</main>
+
+<!-- MODAL -->
+<dialog id="tipModal">
+  <div id="modalContent"></div>
+  <button id="closeModal">Close</button>
+</dialog>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; <span id="year"></span> | James Imoh Obedience</p>
+
+  <div class="footer-social">
+    <a href="https://www.youtube.com" target="_blank" rel="noopener">
+        <img src="images/youtube.webp" alt="YouTube icon" width="30" height="30">
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener">
+      <img src="images/twitter.webp" alt="Twitter icon" width="30" height="30">
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+      <img src="images/linkedin.webp" alt="LinkedIn icon" width="30" height="30">
+    </a>
+ </div>
+
+  <p>
+    Last Modification: <span id="lastModified"></span>
+  </p>
+
+  <p>
+    <a href="#">Project Demo Video</a>
+  </p>
+</footer>
+
+
+</body>
+</html>

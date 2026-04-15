@@ -1,0 +1,107 @@
+[
+  {
+    "name": "Snack Selling",
+    "description": "Sell snacks like chin chin, biscuits, and drinks in your neighborhood or school.",
+    "cost": "Low",
+    "difficulty": "Easy",
+    "image": "images/snack.webp"
+  },
+  {
+    "name": "Laundry Service",
+    "description": "Offer washing and ironing services for busy people.",
+    "cost": "Low",
+    "difficulty": "Easy",
+    "image": "images/laundry.webp"
+  },
+  {
+    "name": "Phone Repair",
+    "description": "Fix phones and help people with common mobile issues.",
+    "cost": "Medium",
+    "difficulty": "Medium",
+    "image": "images/phone.webp"
+  },
+  {
+    "name": "Hairdressing",
+    "description": "Start a small salon or braid hair for clients.",
+    "cost": "Low",
+    "difficulty": "Medium",
+    "image": "images/hairdressing.webp"
+  },
+  {
+    "name": "Barbing",
+    "description": "Cut hair for men and children in your community.",
+    "cost": "Medium",
+    "difficulty": "Medium",
+    "image": "images/barbing.webp"
+  },
+  {
+    "name": "POS Business",
+    "description": "Provide cash withdrawal and transfer services.",
+    "cost": "Medium",
+    "difficulty": "Easy",
+    "image": "images/pos.webp"
+  },
+  {
+    "name": "Clothing Sales",
+    "description": "Sell clothes online or in your area.",
+    "cost": "Medium",
+    "difficulty": "Easy",
+    "image": "images/clothing.webp"
+  },
+  {
+    "name": "Food Delivery",
+    "description": "Cook and deliver meals to customers.",
+    "cost": "Low",
+    "difficulty": "Medium",
+    "image": "images/food.webp"
+  },
+  {
+    "name": "Graphic Design",
+    "description": "Create logos, flyers, and social media designs.",
+    "cost": "Low",
+    "difficulty": "Medium",
+    "image": "images/design.webp"
+  },
+  {
+    "name": "Tutoring",
+    "description": "Teach students subjects you are good at.",
+    "cost": "Low",
+    "difficulty": "Easy",
+    "image": "images/tutoring.webp"
+  },
+  {
+    "name": "Photography",
+    "description": "Take photos for events and portraits.",
+    "cost": "Medium",
+    "difficulty": "Medium",
+    "image": "images/photography.webp"
+  },
+  {
+    "name": "Car Wash",
+    "description": "Start a simple car washing service.",
+    "cost": "Low",
+    "difficulty": "Easy",
+    "image": "images/carwash.webp"
+  },
+  {
+    "name": "Cleaning Services",
+    "description": "Clean homes and offices for clients.",
+    "cost": "Low",
+    "difficulty": "Easy",
+    "image": "images/cleaning.webp"
+  },
+  {
+    "name": "Makeup Artist",
+    "description": "Provide makeup services for events.",
+    "cost": "Medium",
+    "difficulty": "Medium",
+    "image": "images/makeup.webp"
+  },
+  {
+    "name": "Baking",
+    "description": "Bake cakes, bread, and pastries for sale.",
+    "cost": "Medium",
+    "difficulty": "Medium",
+    "image": "images/baking.webp"
+  }
+]

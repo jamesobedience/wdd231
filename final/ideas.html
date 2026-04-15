@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ideas | Simple Business Ideas</title>
+
+<meta name="description" content="Explore simple business ideas you can start with little money.">
+<meta name="author" content="James Imoh Obedience">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Business Ideas">
+<meta property="og:description" content="Discover simple business ideas you can start today.">
+<meta property="og:image" content="https://jamesobedience.github.io/wdd231/final/images/hero.webp">
+<meta property="og:url" content="https://jamesobedience.github.io/wdd231/final/ideas.html">
+
+<!-- CSS -->
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/small.css">
+<link rel="stylesheet" href="styles/larger.css">
+
+<!-- JS -->
+<script src="scripts/dates.js" defer></script>
+<script src="scripts/hamburger.js" defer></script>
+<script src="scripts/ideas.js" defer></script>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <img src="images/logo.webp" alt="Business Ideas Logo" width="50" height="50">
+  <h1>Business Ideas</h1>
+
+  <button id="menuBtn" class="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <nav id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="ideas.html" class="active">Ideas</a></li>
+      <li><a href="tips.html">Tips</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- MAIN -->
+<main>
+
+  <!-- PAGE INTRO -->
+  <section class="intro">
+    <h2>Business Ideas You Can Start Today</h2>
+    <p>
+      Browse a collection of simple and affordable business ideas. Click "Learn More"
+      to see details and get inspired to start your journey.
+    </p>
+  </section>
+
+  <!-- VISIT MESSAGE (LOCAL STORAGE) -->
+  <section class="visit-message">
+    <h2 class="visually-hidden">Visitor Message</h2>
+    <p id="visitMessage"></p>
+  </section>
+
+  <!-- IDEAS GRID -->
+  <section class="ideas-grid" id="ideasContainer">
+    <h2 class="visually-hidden">List of Business Ideas</h2>
+    <!-- Cards will be inserted here by JavaScript -->
+  </section>
+
+</main>
+
+<!-- MODAL -->
+<dialog id="ideaModal">
+  <button id="closeModal" aria-label="Close">❌</button>
+  <div id="modalContent"></div>
+</dialog>
+
+<!-- FOOTER -->
+<footer>
+  <p>&copy; <span id="year"></span> | James Imoh Obedience</p>
+
+  <div class="footer-social">
+    <a href="https://www.youtube.com" target="_blank" rel="noopener">
+        <img src="images/youtube.webp" alt="YouTube icon" width="30" height="30">
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener">
+      <img src="images/twitter.webp" alt="Twitter icon" width="30" height="30">
+    </a>
+    <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+      <img src="images/linkedin.webp" alt="LinkedIn icon" width="30" height="30">
+    </a>
+ </div>
+
+  <p>
+    Last Modification: <span id="lastModified"></span>
+  </p>
+
+  <p>
+    <a href="#">Project Demo Video</a>
+  </p>
+</footer>
+
+</body>
+</html>

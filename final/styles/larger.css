@@ -1,0 +1,60 @@
+/* =========================
+   TABLET
+   ========================= */
+@media (min-width: 600px) {
+
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .hero-text {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    max-width: 350px;
+    text-align: left;
+    border-radius: var(--radius);
+  }
+
+  .featured-grid,
+  .ideas-grid,
+  #tips-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   DESKTOP
+   ========================= */
+@media (min-width: 900px) {
+
+  body {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  header {
+    padding: 1rem 3rem;
+  }
+
+  .hero-text {
+    max-width: 420px;
+  }
+
+  .featured-grid,
+  .ideas-grid,
+  #tips-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
