@@ -291,7 +291,7 @@ section {
   margin-top: 0.6rem;
   padding: 0.3rem 0.7rem;
   background: var(--secondary);
-  color: white;
+  color: var(--card);
   border-radius: 10px;
   font-size: 0.75rem;
 }
